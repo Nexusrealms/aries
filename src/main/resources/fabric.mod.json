@@ -3,19 +3,22 @@
 	"id": "aries",
 	"version": "${version}",
 	"name": "Aries",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A wrapper mod for Apoli and similair power libraries. Can be thought of as highly simplified origins.",
 	"authors": [
-		"Me!"
+		"Farpo"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://nexusrealms.de",
+		"sources": "https://github.com/Nexusrealms/aries"
 	},
 	"license": "MIT",
 	"icon": "assets/aries/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
+			"de.nexusrealms.aries.Aries"
+		],
+		"cardinal-components-entity": [
 			"de.nexusrealms.aries.Aries"
 		]
 	},
@@ -30,5 +33,10 @@
 	},
 	"suggests": {
 		"another-mod": "*"
+	},
+	"custom": {
+		"cardinal-components": [
+			"aries:pow_sets"
+		]
 	}
 }

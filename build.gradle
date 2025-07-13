@@ -49,8 +49,9 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	modImplementation("io.github.apace100:apoli:${apoli_fabric_version}")
-
+	modImplementation include("io.github.apace100:apoli:${apoli_fabric_version}")
+	modImplementation "org.ladysnake.cardinal-components-api:cardinal-components-base:${project.cca_version}"
+	modImplementation "org.ladysnake.cardinal-components-api:cardinal-components-entity:${project.cca_version}"
 	compileOnly("org.projectlombok:lombok:1.18.38")
 	annotationProcessor("org.projectlombok:lombok:1.18.38")
 }
@@ -96,9 +97,21 @@ publishing {
 
 	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
 	repositories {
-		// Add repositories to publish to here.
-		// Notice: This block does NOT have the same function as the block in the top level.
-		// The repositories here will be used for publishing your artifact, not for
-		// retrieving dependencies.
+		maven {
+			name = "nexusrealmsSnapshots"
+			url = uri("https://maven.riftrealms.de/snapshots")
+			credentials(org.gradle.api.credentials.PasswordCredentials)
+			authentication{
+				basic(BasicAuthentication)
+			}
+		}
+		maven {
+			name = "nexusrealmsReleases"
+			url = uri("https://maven.riftrealms.de/releases")
+			credentials(org.gradle.api.credentials.PasswordCredentials)
+			authentication{
+				basic(BasicAuthentication)
+			}
+		}
 	}
 }

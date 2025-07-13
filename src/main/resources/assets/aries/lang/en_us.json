@@ -1,0 +1,10 @@
+{
+  "command.aries.apply.successful": "Successfully applied %s at level %s to %s of %s players",
+  "command.aries.apply.unsuccessful": "Unsuccessfully applied %s at level %s to %s of %s players",
+  "command.aries.remove.successful": "Successfully removed %s from %s of %s players",
+  "command.aries.remove.unsuccessful": "Unsuccessfully remove %s from %s of %s players",
+  "command.aries.upgrade.successful": "Successfully upgraded %s for %s of %s players",
+  "command.aries.upgrade.unsuccessful": "Unsuccessfully remove %s for %s of %s players",
+  "command.aries.check.has": "Player %s has %s at level %s",
+  "command.aries.check.not": "Player %s does not have %s"
+}

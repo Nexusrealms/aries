@@ -1,0 +1,10 @@
+{
+  "levels": [
+    {
+      "translationKey":"powSet.aries.test",
+      "powers": [
+        "aries:elytra"
+      ]
+    }
+  ]
+}

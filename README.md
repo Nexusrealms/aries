@@ -1,4 +1,5 @@
 # Aries
-A wrapper around Meso-Apoli. It should provide the functionality Meso- and neo- apoli do not currently provide.
+A wrapper around Apoli. It should be usable with minimal rewriting across Apoli, Meso-Apoli and neo-apoli.
+Apoli is currently used, although that may change in the future.
 
-Its features will likely be removed as development on neo-apoli continues
+It's main feature is providing Power Sets or "PowSets", groupings of powers applicable to players with PowSet levels.
