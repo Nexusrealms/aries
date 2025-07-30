@@ -18,6 +18,9 @@
 		"main": [
 			"de.nexusrealms.aries.Aries"
 		],
+		"client": [
+			"de.nexusrealms.aries.AriesClient"
+		],
 		"cardinal-components-entity": [
 			"de.nexusrealms.aries.Aries"
 		]

@@ -6,5 +6,11 @@
   "command.aries.upgrade.successful": "Successfully upgraded %s for %s of %s players",
   "command.aries.upgrade.unsuccessful": "Unsuccessfully remove %s for %s of %s players",
   "command.aries.check.has": "Player %s has %s at level %s",
-  "command.aries.check.not": "Player %s does not have %s"
+  "command.aries.check.not": "Player %s does not have %s",
+
+  "category.aries": "Aries (Apoli Powers)",
+  "key.aries.primary_active": "Active Power (Primary)",
+  "key.aries.secondary_active": "Active Power (Secondary)",
+  "key.aries.tertiary_active": "Active Power (Tertiary)",
+  "key.aries.quaternary_active": "Active Power (Quaternary)"
 }
