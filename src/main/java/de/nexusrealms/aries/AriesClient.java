@@ -15,7 +15,7 @@ public class AriesClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         primaryActiveKeyBinding = new KeyBinding("key.aries.primary_active", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_G, "category." + Aries.MOD_ID);
-        secondaryActiveKeyBinding = new KeyBinding("key.aries.secondary_active", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_C, "category." + Aries.MOD_ID);
+        secondaryActiveKeyBinding = new KeyBinding("key.aries.secondary_active", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_J, "category." + Aries.MOD_ID);
         tertiaryActiveKeyBinding = new KeyBinding("key.aries.tertiary_active", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_M, "category." + Aries.MOD_ID);
         quaternaryActiveKeyBinding = new KeyBinding("key.aries.quaternary_active", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_N, "category." + Aries.MOD_ID);
 
